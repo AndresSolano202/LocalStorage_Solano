@@ -1,12 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title style="text-align: center;">
       Testing - Add LocalStorage
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
+  
+  
+  <img src="https://64.media.tumblr.com/875b29ff7271d441cd1172af7918131f/tumblr_mr9m60SYos1rnbw6mo1_500.gifv" alt="Fondo animado" class="background">
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">
@@ -15,9 +19,16 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <ion-label>{{recovertext}}</ion-label>
-    <input type="text" [(ngModel)]="receivetext">
-    <button (click)="print()">Send</button>
+  
+
+  <div id="container" style="padding-left: 20%; padding-right: 20%;">
+    <img src="https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/haunter.gif" style="height: auto; width: 100%;">
+    <ion-label style="color: rgb(250, 250, 250);">{{recovertext}}</ion-label>
+    <br><br><br><br><br>
+    <input type="text" [(ngModel)]="receivetext" style="width: 100%; text-align: center; "> 
+    <br><br>
+    <button class="btn third" (click)="print()">Guardar</button>
+    
   </div>
+
 </ion-content>
